@@ -1,0 +1,123 @@
+/* General styles for the profile page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-bottom: none;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s;
+}
+
+.tab.active {
+  background-color: #ffffff;
+  border-color: #dee2e6 #dee2e6 #ffffff;
+  font-weight: bold;
+}
+
+.tab:hover {
+  background-color: #e9ecef;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button.primary {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+button.secondary {
+  background-color: #6c757d;
+  color: #ffffff;
+}
+
+button.primary:hover {
+  background-color: #0056b3;
+}
+
+button.secondary:hover {
+  background-color: #5a6268;
+}
+
+.switcher {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.switcher input {
+  margin-right: 10px;
+}

@@ -1,0 +1,112 @@
+.dsa-container {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container for Table */
+.table-container {
+    overflow-x: auto;
+    background: var(--bg);
+    color: var(--text);
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table Header */
+th {
+    background: var(--header);
+    color: var(--text-header);
+    padding: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+/* Table Data */
+td {
+    padding: 18px;
+    font-size: 16px;
+    border-bottom: 2px solid var(--border);
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* Row Hover Effect */
+tbody tr:hover {
+    background: var(--hover-bg);
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+}
+
+/* Employee Info Wrapper */
+.employee-info {
+    display: flex;
+    align-items: center;
+}
+
+/* Icon Images */
+/* Icon Images */
+.icon {
+    width: 30px;  /* Slightly bigger */
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle; /* Align with text */
+}
+
+/* Remove link color and set hover effect */
+.table-container a {
+    text-decoration: none;  /* Remove underline */
+    color: inherit;  /* Inherit text color (no specific color) */
+    transition: color 0.2s ease-in-out;
+}
+
+.table-container a:hover {
+    color: red;  /* Change to red on hover */
+}
+
+/* Light Mode */
+.light {
+    --bg: #fef8ff;
+    --text: #2D033B;
+    --border: #ddd;
+    --header: #C147E9;
+    --text-header: #fff;
+    --hover-bg: #dfdde0;
+}
+
+/* Dark Mode */
+.dark {
+    --bg: #1e1e1e;
+    --text: #f8f9fa;
+    --border: #444;
+    --header: #00ADB5;
+    --text-header: #fff;
+    --hover-bg: #393E46;
+}
+
+/* Smooth transition for dark/light mode switch */
+* {
+    transition: all 0.1s ease-in-out;
+}
+
+/* Fix alignment issue caused by flex */
+td:first-child {
+    padding: 10px 15px;
+}

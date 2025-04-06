@@ -1,0 +1,29 @@
+/* slider.css */
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider img {
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .slider-controls button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  

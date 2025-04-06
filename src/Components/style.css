@@ -1,0 +1,132 @@
+.landing2-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 1.5rem;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.4);
+  }
+  
+  .landing2-chat-header {
+    padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .landing2-header-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+  }
+  
+  .landing2-upload-label {
+    background: rgba(255,255,255,0.15);
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .landing2-upload-label:hover {
+    background: rgba(255,255,255,0.25);
+    transform: translateY(-1px);
+  }
+  
+  .landing2-chat-log {
+    height: 65vh;
+    padding: 1.5rem;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .landing2-message {
+    max-width: 80%;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    animation: landing2-messageEntry 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    position: relative;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes landing2-messageEntry {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .landing2-user-message {
+    background: #6366f1;
+    color: white;
+    margin-left: auto;
+    border-radius: 1.25rem 1.25rem 0 1.25rem;
+    box-shadow: 0 4px 6px rgba(99, 102, 241, 0.15);
+  }
+  
+  .landing2-bot-message {
+    background: rgba(249, 250, 251, 0.95);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    margin-right: auto;
+    border-radius: 1.25rem 1.25rem 1.25rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+  
+  .landing2-chat-form {
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.9);
+    border-top: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .landing2-chat-input {
+    flex: 1;
+    padding: 1rem 1.25rem;
+    border: 2px solid rgba(99, 102, 241, 0.2);
+    border-radius: 1rem;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+  }
+  
+  .landing2-chat-input:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+  }
+  
+  .landing2-submit-btn {
+    padding: 1rem 1.75rem;
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .landing2-submit-btn:hover {
+    background: #4f46e5;
+    transform: translateY(-1px);
+  }
+  
