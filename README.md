@@ -1,3 +1,43 @@
+# 🌐 KareerHub – Smart Career Prep Platform
+
+**KareerHub** is a full-stack AI-powered job preparation platform built to simplify and personalize the career journey for students and job seekers. It integrates resume optimization, personalized study resources, and real-time AI career guidance into one cohesive ecosystem.
+
+---
+
+## 🚀 Key Features
+
+- 🤖 **AI-Powered Chatbot** (Google Gemini API):  
+  Get instant career guidance, resume feedback, and technical interview help.
+
+- 📄 **ATS Resume Analyzer**:  
+  Upload your resume and receive real-time keyword-based feedback to pass modern applicant tracking systems.
+
+- 📚 **Smart Study Materials**:  
+  Curated playlists and notes across DSA, OS, DBMS, CN, OOPS, and SE with easy-to-navigate UI.
+
+- 👩‍💼 **Profile Management**:  
+  Showcase your skills, projects, and resume with a structured and editable professional profile.
+
+- 🏢 **Company-Specific Preparation**:  
+  CSV-based modules for targeted prep—featuring question banks from top recruiters like Google, Amazon, Microsoft, etc.
+
+---
+
+## 🧰 Tech Stack
+
+- **Frontend**: React.js, Tailwind CSS, Framer Motion  
+- **Backend**: Node.js, Express.js  
+- **AI Integration**: Google Gemini API  
+- **Auth & Security**: Auth0, JWT, OAuth 2.0  
+- **Database**: LocalStorage (Prototype), Scalable for MongoDB/PostgreSQL  
+- **Testing**: Selenium, JMeter, OWASP ZAP
+
+---
+
+## 📂 Directory Structure
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
